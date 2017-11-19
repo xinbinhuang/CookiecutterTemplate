@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "The path you want to create the repository (current path '.'):" path
+read -p 'The path you want to create the repository (for current path, enter: "."):' path
 read -p "project_name:" project
 read -p "repo_name:" repo
 read -p "Select open_source_license: 
