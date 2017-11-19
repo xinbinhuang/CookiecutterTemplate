@@ -1,15 +1,16 @@
 # CookiecutterTemplate- Data Analysis
 __Author__: Xinbin Huang
+
 __Date__:  November 17, 2017
 
-### Overview
+## Overview
 A simple and logical file/directory structure for doing and sharing data analysis project.
 
-### Requirements to use the cookiecutter template:
+## Requirements to use the cookiecutter template:
 
 - Bash shell 
 
-### Installation & Execution
+## Installation & Execution
 First, clone the repository to local disk. Open the bash terminal, and type:
 
 For __HTTPS__
@@ -30,7 +31,7 @@ bash cookie_cutter.sh
 ```
 ![](test.png)
 
-### The resulting directory structure
+## The resulting directory structure
 The directory structure of the generated new project looks like this:
 
 ```
