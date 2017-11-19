@@ -1,19 +1,24 @@
 #!/bin/bash
 
+
+#### read in values for path, project_name, repo_name, and licenses.
 read -p 'The path you want to create the repository (for current path, enter: "."):' path
 read -p "project_name:" project
 read -p "repo_name:" repo
 read -p "Select open_source_license: 
 1 - MIT
 2 - BSD
-3 - Not included
+3 - Empty license
 Choose from 1, 2, 3:" license 
 
 
-
+#### change to the input path
 cd $path
 
+#### create the repository with the input repo_name
 mkdir $repo
+
+#### create the following file/directory structure within the repository
 cd $repo
 
 touch CITATION.md
@@ -24,8 +29,10 @@ mkdir doc
 mkdir results
 mkdir src
 
+#### add the project name to README.md
 echo "#" $project > README.md
 
+#### include license according to the previous input
 if [ "$license" == "1" ]; then
 	echo 'Copyright (c) <year>, <copyright holder>
 	All rights reserved.
